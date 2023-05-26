@@ -1,0 +1,391 @@
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Sarala', sans-serif;
+}
+
+a{
+    text-decoration-style: none;
+    text-decoration: none;
+    color: #222222;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ilha-logo{
+    font-size: larger;
+    font-weight: 900;
+    color: #59D559;
+}
+
+
+.navbar-list{
+    list-style-type: none;
+    display: flex;
+    margin-right: -100px;
+}
+
+.navbar-list-items{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -15px;
+}
+
+.navbar-list-items a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.navbar-list-items a:hover{
+    text-decoration: none;
+    color: #59d559;
+    transition: all 0.8s;
+}
+
+.login-button{
+    width: 100px;
+    background: white;
+    color: #59d559;
+    padding: 5px;
+    line-height: 25px;
+    border-radius: 25px;
+    border: none;
+    font-size: medium;
+}
+
+.btn-wrapper{
+    align-items: flex-end;
+}
+
+.register-button{
+    width: 100px;
+    background: #59D559;
+    color: white;
+    padding: 5px;
+    line-height: 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.login-button:hover{
+    background: #59D559;
+    color: white;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.first-page-section{
+    text-align: center;
+}
+
+.title-intro{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.subtitle-intro{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.explore-now-button{
+    width: 150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #59D559;
+    color: white;
+    padding: 5px;
+    line-height: 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.mockup-background{
+    background-image: url("../img/mockup.png");
+    height: 400px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin-bottom: 10px;
+}
+
+.second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #f2f1f1;
+}
+
+.second-section-titles{
+    text-align: center;
+    background: #f2f1f1;
+}
+
+.second-section h1{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-size: 30px;
+}
+
+.have-best-experience-text{
+    margin-bottom: -5px;
+    font-size: 20px;
+    color: #59D559;
+}
+
+.second-section p{
+    font-size: 11px;
+}
+
+.search-filter-box{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 680px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 100px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.search-filter-explore-btn{
+    width: 148px;
+    height: 52px;
+    background: #59D559;
+    color: white;
+    padding: 5px;
+    line-height: 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.search-filter-explore-btn:hover{
+    cursor: pointer;
+    color: #59D559;
+    background: white;
+    border: 1px solid #59D559;
+    transition: 1s;
+}
+
+.place-type-selection{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.unique-place-selector{
+    width: 100px;
+    height: 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* flex: none;
+    order: 0;
+    flex-grow: 0; */
+}
+
+.logo-container{
+    width: 30px;
+    height: 30px;
+    background: #f2f1f1;
+    border-radius: 150px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unique-place-selector:hover{
+    background: #59D559;
+    color: white;
+    transition: 1s;
+}
+
+
+/*HERE SHOULD'VE BEEN USED FLEXBOX, BUT TEMPORARILY WE USING GRID*/
+.place-results-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.specific-card-result{
+    background: white;
+    height: 290px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.specific-card-result:hover{
+    border: 1px solid #59D559;
+}
+
+.card-place-name{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.location-markers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-view-all-results{
+    width: 150px;
+    height: 52px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #59D559;
+    color: white;
+    padding: 5px;
+    line-height: 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    margin-bottom: 70px;
+}
+
+.btn-view-all-results:hover{
+    cursor: pointer;
+    color: #59D559;
+    background: white;
+    border: 1px solid #59D559;
+    transition: 1s;
+}
+
+.app-download-box{
+    width: 1043px;
+    height: 431px;
+    background: white;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.left-side-info{
+    margin-left: 30px;
+    margin-bottom: auto;
+    margin-top: 40px;
+
+}
+
+.download-now-title{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.download-now-text{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color: #59D559;
+}
+
+.download-link-area{
+    display: flex;
+    margin-top: 20px;
+}
+
+.get-for-android-box{
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 63px;
+    background: #f2f1f1;
+    padding-top: 5px;
+}
+
+.download-link-area-text p{
+    flex-direction: row;
+    padding: 0;
+    margin: 0px 0px 0px 5px;
+    font-size: 13px;
+}
+
+.get-for-ios-box{
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 63px;
+    background: #f2f1f1;
+    padding-top: 5px;
+}
+
+.download-link-area-text p{
+    flex-direction: row;
+    padding: 0;
+    margin: 0px 0px 0px 5px;
+    font-size: 13px;
+}
+
+footer{
+    background: white;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.footer-link-boxes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-box ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.copyright p{
+    font-size: 13px;
+}
+
