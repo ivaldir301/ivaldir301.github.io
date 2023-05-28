@@ -361,14 +361,12 @@ a{
 }
 
 footer{
+    display: flex;
+    justify-content: space-around;
     background: white;
     width: 100%;
     padding-top: 30px;
-}
-
-.footer-link-boxes{
-    display: flex;
-    justify-content: space-around;
+    padding-bottom: 10px;
 }
 
 .link-box ul{
@@ -378,11 +376,14 @@ footer{
     margin-top: 15px;
 }
 
+.link-box ul li{
+    margin-top: 25px;
+}
+
 .copyright{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    width: 100%;
+    background: white;
+    text-align: center;
 }
 
 .copyright p{
