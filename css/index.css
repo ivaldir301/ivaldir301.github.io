@@ -531,7 +531,7 @@ nav .menubtn{
 
 @media (max-width: 600px) {
     .app-download-box{
-        width: 350px;
+        width: 320px;
         height: 100px;
         margin-top: -30px;
         margin-bottom: 20px;
