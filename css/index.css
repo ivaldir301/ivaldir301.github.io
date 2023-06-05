@@ -99,7 +99,10 @@ nav .menubtn{
     color: #59D559;
     margin-top: -10px;
 }
-   
+
+.sideNav #sideNav{
+    display: none;
+}
 
 @media screen and (max-width: 600px) {
     .navbar-list{
@@ -226,6 +229,21 @@ nav .menubtn{
     background-repeat: no-repeat; 
     background-size: cover; 
     margin-bottom: 10px;
+}
+
+@media (max-width: 600px){
+    .explore-now-button{
+        margin-bottom: 20px;
+    }
+    .mockup-background{
+        background-image: url("../img/mock-up2.png");
+        background-size: 500px;    
+        height: 600px;
+    }
+
+    .second-section-titles{
+        display: none;
+    }
 }
 
 .second-section{
@@ -356,6 +374,12 @@ nav .menubtn{
     }
 }
 
+@media (max-width: 600px){
+    .unique-place-selector{
+       display: none;
+    }
+}
+
 
 /*HERE SHOULD'VE BEEN USED FLEXBOX, BUT TEMPORARILY WE USING GRID*/
 .place-results-cards{
@@ -416,6 +440,20 @@ nav .menubtn{
     background: white;
     border: 1px solid #59D559;
     transition: 1s;
+}
+
+@media (max-width: 600px) {
+    .place-results-cards{
+        display: none;
+    }
+
+    .search-filter-box{
+        display: none;
+    }
+
+    .btn-view-all-results{
+        display: none;
+    }
 }
 
 .app-download-box{
@@ -489,6 +527,32 @@ nav .menubtn{
     padding: 0;
     margin: 0px 0px 0px 5px;
     font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .app-download-box{
+        width: 350px;
+        height: 100px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+
+    .download-now-title{
+        display: none;
+    }
+
+    .download-now-text{
+        display: none;
+    }
+
+    .download-now-p{
+        display: none;
+    }
+
+    .download-link-area{
+        margin-top: -25px;
+    }
+    
 }
 
 footer{
