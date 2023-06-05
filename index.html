@@ -14,6 +14,7 @@
 <body>
     <nav class="navbar-wrapper">
         <span class="ilha-logo">Ilha</span>
+        <span class="menubtn" onclick="openNav()">&#9776;</span>
         <ul class="navbar-list">
             <li class="navbar-list-items"><a href="">Home</a></li>
             <li class="navbar-list-items"><a href="">About</a></li>
@@ -23,6 +24,17 @@
         <div class="btn-wrapper">
             <a href=""><button class="login-button">Login</button></a>
             <a href=""><button class="register-button">Register</button></a>
+        </div>
+        <!-- responsive navbar toggle button -->
+        <div class="sideNav" id="sidenav">
+            <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Places</a>
+            <a href="#">Events</a>
+            <a href="#"><button type="button">Login</button> </a>
+            <a href="#"><button type="button">Register</button> </a>
+        </div>
         </div>
     </nav>
 
@@ -50,7 +62,7 @@
                     Praia, Cabo Verde
                 </p>
             </div>
-            <a href=""><button class="search-filter-explore-btn"> Explore Now</button></a>
+            <a href=""><button class="search-filter-explore-btn"> Explore</button></a>
         </div>
 
         <div class="place-type-selection">
@@ -277,6 +289,14 @@
                     </div>
             </footer>
             <div class="copyright"> <p><i class="fa-solid fa-copyright" style="margin-right: 3px;"></i>2023 Copyright Ilha | All rights reserved</p></div>
+            <script>
+                function openNav() {
+                  document.getElementById("sidenav").style.width = "50%";
+                }
+                function closeNav() {
+                  document.getElementById("sidenav").style.width = "0%";
+                }
+              </script>             
 </body>
 </html>
 

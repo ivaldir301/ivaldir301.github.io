@@ -1,8 +1,11 @@
+/* Resets */
+
 html, body{
     max-width: 100%;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
     font-family: 'Sarala', sans-serif;
 }
@@ -12,6 +15,9 @@ a{
     text-decoration: none;
     color: #222222;
 }
+
+
+/* NAVBAR */
 
 .navbar-wrapper{
     display: flex;
@@ -85,6 +91,104 @@ a{
     transition: all 0.8s;
 }
 
+nav .menubtn{
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+    color: #59D559;
+    margin-top: -10px;
+}
+   
+
+@media screen and (max-width: 600px) {
+    .navbar-list{
+        display: none;
+    }
+    .btn-wrapper{
+        display: none;
+    }
+    nav .menubtn{
+      display: flex;
+    }
+    nav .navLinks{
+      display: none;
+    }
+    .sideNav {
+      display: block !important;
+    }
+  }
+   
+  .sideNav{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: #59D559;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+  }
+   
+  .sideNav a{
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .sideNav a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #59D559;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+  }
+  .sideNav a:hover{
+    color: white;
+  }
+  .sideNav .closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+   
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+  }
+  .row .column1 {
+    padding-right: 50px;
+  }
+  .column1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .column1 p {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .column1 button {
+    width: 150px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: blue;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+
+/* FIRST PAGE SECTION*/
+
 .first-page-section{
     text-align: center;
 }
@@ -149,6 +253,7 @@ a{
     color: #59D559;
 }
 
+
 .second-section p{
     font-size: 11px;
 }
@@ -166,7 +271,7 @@ a{
 }
 
 .search-filter-explore-btn{
-    width: 148px;
+    width: 280px;
     height: 52px;
     background: #59D559;
     color: white;
@@ -223,6 +328,32 @@ a{
     background: #59D559;
     color: white;
     transition: 1s;
+}
+
+@media (max-width: 600px){
+    .search-filter-box{
+        width: 300px;
+        height: 40px;
+        padding: 15px;
+    }
+
+    .location-texts{
+        margin-top: -13px;
+    }
+
+    .search-filter-explore-btn{
+        width: 120px;
+        height: 32px;
+        margin-top: 6px;
+        background: #59D559;
+        color: white;
+        padding: 5px;
+        line-height: 25px;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        font-size: medium;
+    }
 }
 
 
