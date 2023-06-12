@@ -235,10 +235,21 @@ nav .menubtn{
     .explore-now-button{
         margin-bottom: 20px;
     }
+
     .mockup-background{
         background-image: url("../img/mock-up2.png");
-        background-size: 500px;    
-        height: 600px;
+        background-position: center; 
+        background-size: 350px;
+        height: 500px;
+        margin-bottom: -10px;
+        margin-top: -20px;
+    }
+
+    .mockup-background-mobile{
+        display: block;
+        background-image: url("../img/mock-up2.png");
+        background-position: center; 
+        background-size: cover; 
     }
 
     .second-section-titles{
@@ -468,6 +479,7 @@ nav .menubtn{
     padding: 5px;
 }
 
+
 .left-side-info{
     margin-left: 30px;
     margin-bottom: auto;
@@ -529,12 +541,17 @@ nav .menubtn{
     font-size: 13px;
 }
 
+
+
 @media (max-width: 600px) {
     .app-download-box{
+        display: flex;
+        justify-content: space-between;
         width: 320px;
         height: 100px;
         margin-top: -30px;
         margin-bottom: 20px;
+        border-radius: 10px;
     }
 
     .download-now-title{
@@ -551,6 +568,19 @@ nav .menubtn{
 
     .download-link-area{
         margin-top: -25px;
+    }
+
+    #right-side-img{
+        display: none;
+    }
+
+    .get-for-android-box{
+        margin-left: -25px;
+        border-radius: 10px;
+    }
+
+    .get-for-ios-box{
+        border-radius: 10px;
     }
     
 }
