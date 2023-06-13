@@ -38,12 +38,15 @@
         </div>
     </nav>
 
-
     <div class="first-page-section">
         <h1 class="title-intro">Come explore the beautiful Cape-Verdian <h1 class="title-intro">Morabeza with Ilha</h1></h1>
         <p class="subtitle-intro">We combine the best experiences in one place, in order for you to find the <p class="subtitle-intro"> best way to enjoy your time in Cape Verde</p></p>
         <p class="subtitle-intro-mobile">You are currently on an mobile device,  we suggest downloading our app for the best performance and experience!</p>
+    </div>
+
+    <div class="button-explore-and-download">
         <a href=""><button class="explore-now-button">Explore Now</button></a>
+        <button id="btn-view-all-results-mobile">Download Now</button>
     </div>
 
     <div class="mockup-background"></div>
@@ -76,10 +79,6 @@
                 </div>
             </a>
 
-            <div class="place-selector-group">
-                
-            </div>
-            
             <a href="">
                 <div class="unique-place-selector">
                     <div class="logo-container">
@@ -220,10 +219,10 @@
             </div>
 
             <a href="">
-                <button class="btn-view-all-results">Explore All</button>
+                <button class="btn-view-all-results" id="btn-view-all-results">Explore All</button>
             </a>
 
-            <div class="app-download-box">
+            <div class="app-download-box" id="app-download-box">
                 <div class="left-side-info">
                     <h4 class="download-now-title">DOWNLOAD NOW</h4>
                     <h2 class="download-now-text">Download it and start finding your best experiences</h2>
@@ -296,7 +295,8 @@
             <div class="copyright"> <p><i class="fa-solid fa-copyright" style="margin-right: 3px;"></i>2023 Copyright Ilha | All rights reserved</p></div>
             <script>
                 function openNav() {
-                  document.getElementById("sidenav").style.width = "50%";
+                  document.getElementById("sidenav").style.width = "65%";
+
                 }
                 function closeNav() {
                   document.getElementById("sidenav").style.width = "0%";
